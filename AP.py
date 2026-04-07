@@ -72,7 +72,7 @@ def check_walls(ap_x, ap_y, target_x, target_y):
 
 # --- 4. 部署规划 ---
 def plan_ap_deployment():
-    # 根据题目：5GHz 穿透1堵承重墙(12dB) 半径 58m
+    # 5GHz 穿透1堵承重墙(12dB) 半径 58m
     # 走廊直线覆盖距离应该远大于此。
     # 100m 长度，部署 2 个 AP 比较稳妥，分别位于 1/3 和 2/3 处。
     ap_positions = [
@@ -116,7 +116,7 @@ def generate_heatmap(aps):
     plt.figure(figsize=(12, 8))
 
     # 设置颜色条范围，-90 到 -30 是典型的 Wi-Fi 信号范围
-    # 如果数据全是 NaN 或 0，这里会显示空白，所以前面的初始化很重要
+    # 如果数据全是 NaN 或 0，这里会显示空白
     levels = np.linspace(-90, -30, 20)
     cp = plt.contourf(X, Y, Z, levels=levels, cmap='jet', extend='both')
     plt.colorbar(cp, label='Signal Strength (dBm)')
