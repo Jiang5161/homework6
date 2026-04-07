@@ -35,7 +35,7 @@ def calculate_rssi(distance, wall_loss):
     rssi = TX_POWER - total_loss
     return rssi
 
-# --- 3. 墙体检测逻辑 (优化版) ---
+# --- 3. 墙体检测逻辑 ---
 def check_walls(ap_x, ap_y, target_x, target_y):
     """
     简化版射线检测：计算从 AP 到目标点穿过了多少堵墙
