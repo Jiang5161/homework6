@@ -1,0 +1,15 @@
+# C++ Ignore 
+ipch/ 
+.vscode/ 
+Debug/ 
+Release/ 
+*.obj 
+*.exe 
+*.pdb 
+*.ilk 
+*.log 
+Thumbs.db 
+# Python Ignore 
+__pycache__/ 
+*.pyc 
+*.pyo 
